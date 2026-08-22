@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AI Market - اشتراک هوش مصنوعی</title>
+<title>AI Market | اشتراک هوش مصنوعی</title>
 
 <style>
 
@@ -16,136 +16,88 @@ box-sizing:border-box;
 
 body{
 margin:0;
-font-family:Tahoma, Arial;
-background:#f3f4f6;
+font-family:Tahoma,Arial;
+background:#f4f6f8;
 color:#111827;
 }
 
-
 header{
-
 background:linear-gradient(135deg,#111827,#2563eb);
 color:white;
-padding:50px 20px;
+padding:45px 20px;
 text-align:center;
-
 }
-
 
 header h1{
-
 font-size:42px;
-margin:0 0 15px;
-
+margin:0 0 10px;
 }
-
-
-header p{
-
-font-size:20px;
-
-}
-
 
 
 .products{
-
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
 gap:25px;
 padding:40px;
-
 }
 
 
-
 .card{
-
 background:white;
 width:300px;
 padding:30px;
 border-radius:20px;
 text-align:center;
 box-shadow:0 8px 25px #ddd;
-transition:.3s;
-
 }
-
-
-
-.card:hover{
-
-transform:translateY(-8px);
-
-}
-
 
 
 .icon{
-
-font-size:50px;
-margin-bottom:15px;
-
+font-size:45px;
 }
-
 
 
 .card h2{
-
-margin:10px 0;
-
+margin:15px 0;
 }
-
 
 
 .card p{
-
-color:#555;
 line-height:2;
-min-height:70px;
-
+color:#555;
 }
 
 
-
 .price{
-
 font-size:22px;
 font-weight:bold;
 color:#2563eb;
 margin:20px;
-
 }
-
 
 
 button{
-
 background:#2563eb;
 color:white;
 border:0;
-padding:14px 35px;
+padding:13px 25px;
 border-radius:10px;
-font-size:16px;
 cursor:pointer;
-
+font-size:15px;
+margin:5px;
 }
-
 
 
 button:hover{
-
 background:#1d4ed8;
-
 }
 
 
-
-.features{
+.payment{
 
 background:white;
-max-width:900px;
+max-width:700px;
 margin:20px auto;
 padding:30px;
 border-radius:20px;
@@ -154,15 +106,15 @@ text-align:center;
 }
 
 
+.cardnumber{
 
-.features span{
-
-display:inline-block;
-margin:15px;
-font-size:18px;
+font-size:24px;
+font-weight:bold;
+color:#111827;
+letter-spacing:2px;
+margin:20px;
 
 }
-
 
 
 .support{
@@ -171,10 +123,8 @@ background:#111827;
 color:white;
 padding:35px;
 text-align:center;
-margin-top:30px;
 
 }
-
 
 
 footer{
@@ -187,11 +137,9 @@ text-align:center;
 }
 
 
-
 </style>
 
 </head>
-
 
 
 <body>
@@ -205,7 +153,7 @@ AI Market
 </h1>
 
 <p>
-خرید و تمدید اشتراک ابزارهای هوش مصنوعی
+خرید و تمدید اشتراک هوش مصنوعی
 </p>
 
 </header>
@@ -216,27 +164,24 @@ AI Market
 <section class="products">
 
 
-
 <div class="card">
 
-<div class="icon">
-🤖
-</div>
+<div class="icon">🤖</div>
 
 <h2>
 ChatGPT Plus
 </h2>
 
 <p>
-دسترسی حرفه‌ای برای تولید محتوا، تحقیق، برنامه‌نویسی و کارهای روزمره
+دسترسی حرفه‌ای برای تولید محتوا، تحقیق و برنامه‌نویسی
 </p>
 
 <div class="price">
-ماهانه
+3,500,000 تومان
 </div>
 
-<button>
-سفارش ChatGPT Plus
+<button onclick="order('ChatGPT Plus')">
+سفارش
 </button>
 
 </div>
@@ -244,27 +189,24 @@ ChatGPT Plus
 
 
 
-
 <div class="card">
 
-<div class="icon">
-🚀
-</div>
+<div class="icon">🚀</div>
 
 <h2>
 ChatGPT Pro
 </h2>
 
 <p>
-نسخه حرفه‌ای برای کاربران پیشرفته، کسب‌وکارها و پروژه‌های سنگین
+نسخه حرفه‌ای برای کاربران پیشرفته و پروژه‌های سنگین
 </p>
 
 <div class="price">
-ماهانه
+19,000,000 تومان
 </div>
 
-<button>
-سفارش ChatGPT Pro
+<button onclick="order('ChatGPT Pro')">
+سفارش
 </button>
 
 </div>
@@ -272,59 +214,52 @@ ChatGPT Pro
 
 
 
-
 <div class="card">
 
-<div class="icon">
-✨
-</div>
-
-<h2>
-Gemini Advanced
-</h2>
-
-<p>
-هوش مصنوعی گوگل برای کارهای حرفه‌ای و استفاده روزمره
-</p>
-
-<div class="price">
-ماهانه
-</div>
-
-<button>
-سفارش Gemini Advanced
-</button>
-
-</div>
-
-
-
-
-
-<div class="card">
-
-<div class="icon">
-🧠
-</div>
+<div class="icon">🧠</div>
 
 <h2>
 Claude Pro
 </h2>
 
 <p>
-تحلیل، نوشتن، تحقیق و انجام کارهای تخصصی با هوش مصنوعی
+هوش مصنوعی حرفه‌ای برای تحلیل و نوشتن
 </p>
 
 <div class="price">
-ماهانه
+3,500,000 تومان
 </div>
 
-<button>
-سفارش Claude Pro
+<button onclick="order('Claude Pro')">
+سفارش
 </button>
 
 </div>
 
+
+
+
+<div class="card">
+
+<div class="icon">✨</div>
+
+<h2>
+Gemini Advanced
+</h2>
+
+<p>
+هوش مصنوعی گوگل برای کارهای حرفه‌ای
+</p>
+
+<div class="price">
+تماس بگیرید
+</div>
+
+<button onclick="order('Gemini Advanced')">
+سفارش
+</button>
+
+</div>
 
 
 </section>
@@ -333,27 +268,40 @@ Claude Pro
 
 
 
-<div class="features">
+<div class="payment">
 
 <h2>
-مزایای AI Market
+پرداخت و تمدید اشتراک
 </h2>
 
-<span>
-⚡ فعال‌سازی سریع
-</span>
 
-<span>
-🔒 پشتیبانی فارسی
-</span>
+<p>
+شماره کارت:
+</p>
 
-<span>
-🔄 تمدید آسان
-</span>
 
-<span>
-💬 پاسخگویی آنلاین
-</span>
+<div class="cardnumber" id="card">
+6219861067604834
+</div>
+
+
+<button onclick="copyCard()">
+کپی شماره کارت
+</button>
+
+
+<button onclick="customPay()">
+واریز مبلغ دلخواه
+</button>
+
+
+<p>
+بعد از واریز، رسید را در تلگرام ارسال کنید:
+</p>
+
+<h3>
+@Ariannasri
+</h3>
 
 
 </div>
@@ -369,16 +317,10 @@ Claude Pro
 </h2>
 
 <p>
-تلگرام: @YourTelegramID
+تلگرام: @Ariannasri
 </p>
-
-<p>
-برای خرید و تمدید با ما در ارتباط باشید
-</p>
-
 
 </div>
-
 
 
 
@@ -389,6 +331,50 @@ AI Market © 2026
 
 </footer>
 
+
+
+
+<script>
+
+
+function order(product){
+
+let text="سلام، درخواست خرید "+product+" را دارم.";
+
+window.open(
+"https://t.me/Ariannasri?text="+encodeURIComponent(text),
+"_blank"
+);
+
+}
+
+
+
+function customPay(){
+
+let text="سلام، می‌خواهم مبلغ دلخواه برای خرید یا تمدید اشتراک واریز کنم.";
+
+window.open(
+"https://t.me/Ariannasri?text="+encodeURIComponent(text),
+"_blank"
+);
+
+}
+
+
+
+function copyCard(){
+
+let card=document.getElementById("card").innerText;
+
+navigator.clipboard.writeText(card);
+
+alert("شماره کارت کپی شد");
+
+}
+
+
+</script>
 
 
 </body>
