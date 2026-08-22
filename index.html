@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AI Market | اشتراک هوش مصنوعی</title>
+<title>AI Market | خرید اشتراک هوش مصنوعی</title>
 
 <style>
 
@@ -17,20 +17,32 @@ box-sizing:border-box;
 body{
 margin:0;
 font-family:Tahoma,Arial;
-background:#f4f6f8;
+background:#f5f7fb;
 color:#111827;
+line-height:1.8;
 }
 
 header{
 background:linear-gradient(135deg,#111827,#2563eb);
 color:white;
-padding:45px 20px;
+padding:60px 20px;
 text-align:center;
 }
 
 header h1{
-font-size:42px;
-margin:0 0 10px;
+font-size:45px;
+margin:0;
+}
+
+header p{
+font-size:20px;
+}
+
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:30px;
 }
 
 
@@ -39,7 +51,6 @@ display:flex;
 flex-wrap:wrap;
 justify-content:center;
 gap:25px;
-padding:40px;
 }
 
 
@@ -48,24 +59,18 @@ background:white;
 width:300px;
 padding:30px;
 border-radius:20px;
+box-shadow:0 10px 25px #ddd;
 text-align:center;
-box-shadow:0 8px 25px #ddd;
 }
 
 
 .icon{
-font-size:45px;
+font-size:50px;
 }
 
 
 .card h2{
-margin:15px 0;
-}
-
-
-.card p{
-line-height:2;
-color:#555;
+color:#111827;
 }
 
 
@@ -80,12 +85,11 @@ margin:20px;
 button{
 background:#2563eb;
 color:white;
-border:0;
-padding:13px 25px;
+border:none;
+padding:14px 30px;
 border-radius:10px;
 cursor:pointer;
-font-size:15px;
-margin:5px;
+font-size:16px;
 }
 
 
@@ -94,56 +98,69 @@ background:#1d4ed8;
 }
 
 
-.payment{
-
+.section{
 background:white;
-max-width:700px;
-margin:20px auto;
-padding:30px;
+margin:30px auto;
 border-radius:20px;
-text-align:center;
-
+padding:35px;
 }
 
 
-.cardnumber{
-
-font-size:24px;
-font-weight:bold;
-color:#111827;
-letter-spacing:2px;
-margin:20px;
-
+.box{
+display:inline-block;
+background:#f3f4f6;
+padding:15px;
+margin:10px;
+border-radius:12px;
 }
 
 
-.support{
+.faq{
+margin:15px 0;
+}
 
+
+.contact{
 background:#111827;
 color:white;
-padding:35px;
+padding:40px;
 text-align:center;
-
 }
 
 
 footer{
-
 background:#000;
 color:white;
-padding:15px;
 text-align:center;
-
+padding:20px;
 }
 
 
+a{
+text-decoration:none;
+color:inherit;
+}
+
+
+@media(max-width:700px){
+
+.card{
+width:100%;
+}
+
+header h1{
+font-size:32px;
+}
+
+}
+
 </style>
+
 
 </head>
 
 
 <body>
-
 
 
 <header>
@@ -153,20 +170,37 @@ AI Market
 </h1>
 
 <p>
-خرید و تمدید اشتراک هوش مصنوعی
+خرید و تمدید اشتراک بهترین ابزارهای هوش مصنوعی
+</p>
+
+<p>
+فعال‌سازی سریع | پشتیبانی فارسی | خدمات مطمئن
 </p>
 
 </header>
 
 
 
+<div class="container">
 
-<section class="products">
+
+
+<div class="section">
+
+<h2>
+محصولات ما
+</h2>
+
+
+<div class="products">
+
 
 
 <div class="card">
 
-<div class="icon">🤖</div>
+<div class="icon">
+🤖
+</div>
 
 <h2>
 ChatGPT Plus
@@ -180,9 +214,11 @@ ChatGPT Plus
 3,500,000 تومان
 </div>
 
-<button onclick="order('ChatGPT Plus')">
+<a href="https://t.me/Ariannasri">
+<button>
 سفارش
 </button>
+</a>
 
 </div>
 
@@ -191,7 +227,9 @@ ChatGPT Plus
 
 <div class="card">
 
-<div class="icon">🚀</div>
+<div class="icon">
+🚀
+</div>
 
 <h2>
 ChatGPT Pro
@@ -205,9 +243,11 @@ ChatGPT Pro
 19,000,000 تومان
 </div>
 
-<button onclick="order('ChatGPT Pro')">
+<a href="https://t.me/Ariannasri">
+<button>
 سفارش
 </button>
+</a>
 
 </div>
 
@@ -216,23 +256,27 @@ ChatGPT Pro
 
 <div class="card">
 
-<div class="icon">🧠</div>
+<div class="icon">
+🧠
+</div>
 
 <h2>
 Claude Pro
 </h2>
 
 <p>
-هوش مصنوعی حرفه‌ای برای تحلیل و نوشتن
+هوش مصنوعی قدرتمند برای تحلیل و نوشتن حرفه‌ای
 </p>
 
 <div class="price">
 3,500,000 تومان
 </div>
 
-<button onclick="order('Claude Pro')">
+<a href="https://t.me/Ariannasri">
+<button>
 سفارش
 </button>
+</a>
 
 </div>
 
@@ -241,7 +285,9 @@ Claude Pro
 
 <div class="card">
 
-<div class="icon">✨</div>
+<div class="icon">
+✨
+</div>
 
 <h2>
 Gemini Advanced
@@ -255,70 +301,137 @@ Gemini Advanced
 تماس بگیرید
 </div>
 
-<button onclick="order('Gemini Advanced')">
+<a href="https://t.me/Ariannasri">
+<button>
 سفارش
 </button>
+</a>
 
 </div>
 
 
-</section>
+
+</div>
+
+</div>
 
 
 
 
 
-<div class="payment">
+<div class="section">
 
 <h2>
-پرداخت و تمدید اشتراک
+خدمات ما
+</h2>
+
+<div class="box">خرید اشتراک AI</div>
+<div class="box">تمدید اشتراک</div>
+<div class="box">راهنمای انتخاب ابزار AI</div>
+<div class="box">پشتیبانی فارسی</div>
+
+</div>
+
+
+
+
+
+<div class="section">
+
+<h2>
+چرا AI Market؟
+</h2>
+
+<p>
+⚡ فعال‌سازی سریع سرویس‌ها
+</p>
+
+<p>
+🔒 پشتیبانی و راهنمایی کاربران
+</p>
+
+<p>
+🔄 تمدید آسان اشتراک
+</p>
+
+<p>
+💬 پاسخگویی مستقیم تلگرام
+</p>
+
+</div>
+
+
+
+
+
+<div class="section">
+
+<h2>
+سوالات متداول
 </h2>
 
 
-<p>
-شماره کارت:
-</p>
-
-
-<div class="cardnumber" id="card">
-6219861067604834
+<div class="faq">
+<b>چگونه سفارش بدهم؟</b>
+<br>
+روی دکمه سفارش بزنید و در تلگرام پیام دهید.
 </div>
 
 
-<button onclick="copyCard()">
-کپی شماره کارت
-</button>
+<div class="faq">
+<b>آیا امکان تمدید وجود دارد؟</b>
+<br>
+بله، تمدید اشتراک انجام می‌شود.
+</div>
 
 
-<button onclick="customPay()">
-واریز مبلغ دلخواه
-</button>
+<div class="faq">
+<b>پشتیبانی چگونه است؟</b>
+<br>
+از طریق تلگرام پاسخ داده می‌شود.
+</div>
 
+
+</div>
+
+
+
+
+
+<div class="section">
+
+<h2>
+درباره ما
+</h2>
 
 <p>
-بعد از واریز، رسید را در تلگرام ارسال کنید:
+AI Market ارائه‌دهنده خدمات و اشتراک‌های هوش مصنوعی برای کاربران فارسی‌زبان است.
+هدف ما ساده کردن دسترسی به ابزارهای قدرتمند AI است.
 </p>
 
-<h3>
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="contact">
+
+<h2>
+تماس با ما
+</h2>
+
+<p>
+تلگرام:
+</p>
+
+<h2>
 @Ariannasri
-</h3>
-
-
-</div>
-
-
-
-
-
-<div class="support">
-
-<h2>
-پشتیبانی
 </h2>
-
-<p>
-تلگرام: @Ariannasri
-</p>
 
 </div>
 
@@ -331,50 +444,6 @@ AI Market © 2026
 
 </footer>
 
-
-
-
-<script>
-
-
-function order(product){
-
-let text="سلام، درخواست خرید "+product+" را دارم.";
-
-window.open(
-"https://t.me/Ariannasri?text="+encodeURIComponent(text),
-"_blank"
-);
-
-}
-
-
-
-function customPay(){
-
-let text="سلام، می‌خواهم مبلغ دلخواه برای خرید یا تمدید اشتراک واریز کنم.";
-
-window.open(
-"https://t.me/Ariannasri?text="+encodeURIComponent(text),
-"_blank"
-);
-
-}
-
-
-
-function copyCard(){
-
-let card=document.getElementById("card").innerText;
-
-navigator.clipboard.writeText(card);
-
-alert("شماره کارت کپی شد");
-
-}
-
-
-</script>
 
 
 </body>
