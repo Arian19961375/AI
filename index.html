@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AI Market | اشتراک هوش مصنوعی</title>
+<title>AI Market - اشتراک هوش مصنوعی</title>
 
 <style>
 
@@ -15,131 +15,177 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Tahoma, Arial;
-background:#f5f7fb;
 margin:0;
+font-family:Tahoma, Arial;
+background:#f3f4f6;
 color:#111827;
 }
 
+
 header{
+
 background:linear-gradient(135deg,#111827,#2563eb);
 color:white;
 padding:50px 20px;
 text-align:center;
+
 }
+
 
 header h1{
-font-size:40px;
+
+font-size:42px;
 margin:0 0 15px;
+
 }
 
+
 header p{
-font-size:18px;
+
+font-size:20px;
+
 }
+
 
 
 .products{
+
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
 gap:25px;
 padding:40px;
+
 }
 
 
+
 .card{
+
 background:white;
 width:300px;
 padding:30px;
 border-radius:20px;
 text-align:center;
-box-shadow:0 10px 25px #ddd;
+box-shadow:0 8px 25px #ddd;
 transition:.3s;
+
 }
+
 
 
 .card:hover{
+
 transform:translateY(-8px);
+
 }
 
 
-.logo{
-font-size:45px;
+
+.icon{
+
+font-size:50px;
 margin-bottom:15px;
+
 }
+
 
 
 .card h2{
-margin:10px;
+
+margin:10px 0;
+
 }
 
 
-.desc{
-line-height:1.8;
+
+.card p{
+
 color:#555;
-height:70px;
+line-height:2;
+min-height:70px;
+
 }
+
 
 
 .price{
-font-size:24px;
+
+font-size:22px;
 font-weight:bold;
 color:#2563eb;
 margin:20px;
+
 }
 
 
+
 button{
+
 background:#2563eb;
 color:white;
 border:0;
 padding:14px 35px;
 border-radius:10px;
-cursor:pointer;
 font-size:16px;
+cursor:pointer;
+
 }
 
 
+
 button:hover{
+
 background:#1d4ed8;
+
 }
 
 
 
 .features{
+
 background:white;
-margin:20px auto;
 max-width:900px;
+margin:20px auto;
 padding:30px;
 border-radius:20px;
 text-align:center;
+
 }
 
 
-.features div{
+
+.features span{
+
 display:inline-block;
 margin:15px;
 font-size:18px;
+
 }
 
 
 
 .support{
+
 background:#111827;
 color:white;
-padding:30px;
+padding:35px;
 text-align:center;
 margin-top:30px;
+
 }
 
 
 
 footer{
+
 background:#000;
 color:white;
 padding:15px;
 text-align:center;
+
 }
+
 
 
 </style>
@@ -147,76 +193,42 @@ text-align:center;
 </head>
 
 
+
 <body>
+
 
 
 <header>
 
-<h1>AI Market</h1>
+<h1>
+AI Market
+</h1>
 
 <p>
-خرید و تمدید اشتراک بهترین ابزارهای هوش مصنوعی
+خرید و تمدید اشتراک ابزارهای هوش مصنوعی
 </p>
 
 </header>
 
 
 
+
 <section class="products">
 
 
-<div class="card">
-
-<div class="logo">🤖</div>
-
-<h2>ChatGPT Plus</h2>
-
-<p class="desc">
-دسترسی حرفه‌ای برای تولید محتوا، تحقیق و برنامه‌نویسی
-</p>
-
-<div class="price">
-شروع از ۲۰ دلار
-</div>
-
-<button>
-سفارش
-</button>
-
-</div>
-
-
 
 <div class="card">
 
-<div class="logo">🚀</div>
-
-<h2>ChatGPT Pro</h2>
-
-<p class="desc">
-نسخه حرفه‌ای برای کاربران پیشرفته و پروژه‌های سنگین
-</p>
-
-<div class="price">
-شروع از ۲۰۰ دلار
+<div class="icon">
+🤖
 </div>
 
-<button>
-سفارش
-</button>
+<h2>
+ChatGPT Plus
+</h2>
 
-</div>
-
-
-
-<div class="card">
-
-<div class="logo">✨</div>
-
-<h2>Gemini Advanced</h2>
-
-<p class="desc">
-هوش مصنوعی گوگل برای کارهای روزمره و حرفه‌ای
+<p>
+دسترسی حرفه‌ای برای تولید محتوا، تحقیق، برنامه‌نویسی و کارهای روزمره
 </p>
 
 <div class="price">
@@ -224,21 +236,27 @@ text-align:center;
 </div>
 
 <button>
-سفارش
+سفارش ChatGPT Plus
 </button>
 
 </div>
 
 
 
+
+
 <div class="card">
 
-<div class="logo">🧠</div>
+<div class="icon">
+🚀
+</div>
 
-<h2>Claude Pro</h2>
+<h2>
+ChatGPT Pro
+</h2>
 
-<p class="desc">
-تحلیل، نوشتن و کارهای تخصصی با هوش مصنوعی
+<p>
+نسخه حرفه‌ای برای کاربران پیشرفته، کسب‌وکارها و پروژه‌های سنگین
 </p>
 
 <div class="price">
@@ -246,7 +264,63 @@ text-align:center;
 </div>
 
 <button>
-سفارش
+سفارش ChatGPT Pro
+</button>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<div class="icon">
+✨
+</div>
+
+<h2>
+Gemini Advanced
+</h2>
+
+<p>
+هوش مصنوعی گوگل برای کارهای حرفه‌ای و استفاده روزمره
+</p>
+
+<div class="price">
+ماهانه
+</div>
+
+<button>
+سفارش Gemini Advanced
+</button>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<div class="icon">
+🧠
+</div>
+
+<h2>
+Claude Pro
+</h2>
+
+<p>
+تحلیل، نوشتن، تحقیق و انجام کارهای تخصصی با هوش مصنوعی
+</p>
+
+<div class="price">
+ماهانه
+</div>
+
+<button>
+سفارش Claude Pro
 </button>
 
 </div>
@@ -258,25 +332,33 @@ text-align:center;
 
 
 
+
 <div class="features">
 
 <h2>
-چرا AI Market؟
+مزایای AI Market
 </h2>
 
-<div>
+<span>
 ⚡ فعال‌سازی سریع
-</div>
+</span>
 
-<div>
+<span>
 🔒 پشتیبانی فارسی
-</div>
+</span>
 
-<div>
+<span>
 🔄 تمدید آسان
-</div>
+</span>
+
+<span>
+💬 پاسخگویی آنلاین
+</span>
+
 
 </div>
+
+
 
 
 
@@ -290,7 +372,14 @@ text-align:center;
 تلگرام: @YourTelegramID
 </p>
 
+<p>
+برای خرید و تمدید با ما در ارتباط باشید
+</p>
+
+
 </div>
+
+
 
 
 
